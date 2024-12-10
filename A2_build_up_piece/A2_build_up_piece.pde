@@ -12,7 +12,7 @@ rotate(frameCount* .05); //rotating the shape
 circle(map(cos(frameCount* .06),
 -1,1,1,715),map(sin(frameCount* .03),
 -1,1,210,41),50);
-fill(random(10),random(0),random(200)); //turning the circle into random colors
+fill(random(255)); //turning the circle into random colors
 //making the circle spin around in the center
 circle(map(cos(frameCount* .02),
 -1,1,37,56),map(sin(frameCount* .05),

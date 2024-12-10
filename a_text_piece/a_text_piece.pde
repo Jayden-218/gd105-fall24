@@ -11,6 +11,7 @@ void setup(){
 
 void draw(){
   background(0);
+  star(50,50,60,190,58);
   // text overlay
   fill(#d6d6d6);
   text("I am        ,thou art I...", 270,200);
@@ -30,4 +31,18 @@ void draw(){
   fill(#ff0000);
   text("Fool", 437,420);
   text("power", 525,480);
+}
+void star(float x, float y, float radius1, float radius2, int npoints) {
+  float angle = TWO_PI / npoints;
+  float halfAngle = angle/2.0;
+  beginShape();
+  for (float a = 0; a < TWO_PI; a += angle) {
+    float sx = x + cos(a) * radius2;
+    float sy = y + sin(a) * radius2;
+    vertex(sx, sy);
+    sx = x + cos(a+halfAngle) * radius1;
+    sy = y + sin(a+halfAngle) * radius1;
+    vertex(sx, sy);
+  }
+  endShape(CLOSE);
 }

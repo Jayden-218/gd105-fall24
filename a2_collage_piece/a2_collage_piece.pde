@@ -11,19 +11,19 @@ PImage persona5;
 
 void setup(){
   size(900,900);
+  glitchBg = loadImage("pngtree-neon-light-effect-glitch-background-image_749334.png"); //set as a background
  hollowknight = loadImage("HollowKnight1-removebg-preview.png");
  silksong = loadImage("silksongHornet.png");
  sonic = loadImage("sonic-removebg-preview.png.png");
  shadow = loadImage("shadow-removebg-preview.png.png");
  sonicLogo = loadImage("sonic-logo-removebg-preview.png");
  shadowLogo = loadImage("shadow-logo-removebg-preview.png");
- glitchBg = loadImage("pngtree-neon-light-effect-glitch-background-image_749334.png");
  persona3 = loadImage("persona3-removebg-preview.png");
  persona5 = loadImage("persona-5-joker-removebg-preview.png");
 }
 
 void draw(){
-  background(255);
+  //setting the images on the canvas 
   image(glitchBg,-3, -13, 922, 945);
   image(persona5,-2,-109,907,864);
   image(persona3,-3,513,335,423);
