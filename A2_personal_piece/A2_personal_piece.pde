@@ -4,10 +4,15 @@ float angle = 0; //rotation angle
 void setup(){
   size(900,900);
    chaosemerald = loadImage("chaos_emerald-removebg-preview.png");
-  background(0);
 }
 void draw(){
   background(color(#26002f));
+  boolean entireCanvas = mouseX > width * .10;
+ 
+   if(entireCanvas){
+    print("entire Canvas");
+    fill(0); //clearing the dark purple 
+     square(mouseX,mouseY,150);
    stroke(81,0,93);
     strokeWeight(20);
     line(183,214,125,113);
@@ -39,4 +44,8 @@ imageMode(CENTER);
  image(chaosemerald,100, 0); //emerald goes to the center
  popMatrix();
  
+}
+ print("!\t(" + mouseX + ", " + mouseY + ")");
+
+
 }

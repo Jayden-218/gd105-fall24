@@ -16,5 +16,5 @@ fill(random(255)); //turning the circle into random colors
 //making the circle spin around in the center
 circle(map(cos(frameCount* .02),
 -1,1,37,56),map(sin(frameCount* .05),
--1,1,40,53),35);
+-1,1,70,70),27);
 }

@@ -9,12 +9,12 @@ void draw() {
   boolean onLeftSide = mouseX < width * .50;
    if(onRightSide){
     print("on the right side");
-    fill(random(255)); // yellow
+    fill(random(255)); //black and white 
      circle(mouseX,mouseY,100);
   } 
   else if(onLeftSide) {
     print("on the left side");
-    fill(random(255),random(255),random(255)); // brown,dirt
+    fill(random(255),random(255),random(255));//random colors
     square(mouseX,mouseY,100);
   }
 
